@@ -1,0 +1,30 @@
+@use '../abstracts/colors';
+@use '../abstracts/placeholders';
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+
+  &__link {
+    transition: all .3s;
+
+    &:link, &:visited {
+      color: colors.$color-heading;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    &:hover, &:active {
+      color: colors.$color-hover;
+    }
+  }
+
+  &__button {
+    padding: 1rem 2.4rem;
+    font-size: 1.8rem;
+  }
+}

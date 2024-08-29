@@ -1,7 +1,7 @@
-@use 'base/base';
-@use 'base/logo';
-@use 'base/button';
+@forward 'base';
 
-@use 'sections/hero';
+@forward 'layouts';
 
-@use 'components/customers';
+@forward 'sections';
+
+@forward 'components';

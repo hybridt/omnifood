@@ -1,10 +1,8 @@
 @use '../abstracts/colors';
 
-.button,
-.button:link,
-.button:visited {
+.button {
   display: inline-block;
-  padding: 1.6rem 3.2rem;
+  padding: 1.4rem 3.2rem;
   font-size: 2rem;
   border-radius: 9px;
   text-decoration: none;;
