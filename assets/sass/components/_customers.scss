@@ -1,0 +1,19 @@
+@use '../abstracts/colors';
+
+.customers {
+  display: flex;
+
+  &__item {
+    margin-right: -1.6rem;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__image {
+    width: 4.8rem;
+    border-radius: 50%;
+    border: 3px solid colors.$color-bg;
+  }
+}

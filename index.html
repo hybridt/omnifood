@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400...700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <a href="#" class="logo">
       <img src="assets/img/logo.png" alt="omnifood logo" class="logo__image">
     </a>
@@ -22,25 +25,36 @@
         <a href="#" class="button button_main">Try for free</a>
       </div>
     </nav>
-  </header>
+  </header> -->
   <main class="main">
     <section class="hero">
-      <div class="hero__body">
-        <h1 class="hero__heading">A healthy meal delivered to your door, every single day</h1>
-        <p class="hero__description">The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
-        <div class="hero__buttons">
-          <a href="#" class="button button_main">Start eating well</a>
-          <a href="#" class="button button_additional">Learn more &darr;</a>
+      <div class="container hero__wrapper">
+        <div class="hero__body">
+          <h1 class="hero__heading">A healthy meal delivered to your door, every single day</h1>
+          <p class="hero__description">The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
+          <div class="hero__buttons">
+            <a href="#" class="button button_main">Start eating well</a>
+            <a href="#" class="button button_additional">Learn more &darr;</a>
+          </div>
+          <div class="hero__customers">
+            <ul class="customers">
+              <li class="customers__item"><img src="assets/img/customers/customer-1.jpg" alt="Customer photo" class="customers__image"></li>
+              <li class="customers__item"><img src="assets/img/customers/customer-2.jpg" alt="Customer photo" class="customers__image"></li>
+              <li class="customers__item"><img src="assets/img/customers/customer-3.jpg" alt="Customer photo" class="customers__image"></li>
+              <li class="customers__item"><img src="assets/img/customers/customer-4.jpg" alt="Customer photo" class="customers__image"></li>
+              <li class="customers__item"><img src="assets/img/customers/customer-5.jpg" alt="Customer photo" class="customers__image"></li>
+              <li class="customers__item"><img src="assets/img/customers/customer-6.jpg" alt="Customer photo" class="customers__image"></li>
+            </ul>
+            <p class="hero__delivers">
+              <span class="hero__meals-count">250,000+</span>
+              meals delivered last year!
+            </p>
+          </div>
         </div>
-        <div class="hero__customers">
-          <div class="customers__row"></div>
-          <p class="hero__delivers">
-            <span class="hero__meals-count">250,000+</span>
-            meals delivered last year!
-          </p>
+        <div class="hero__image-block">
+          <img src="assets/img/hero.png" alt="" class="hero__image">
         </div>
       </div>
-      <div class="hero__image"></div>
     </section>
   </main>
 </body>

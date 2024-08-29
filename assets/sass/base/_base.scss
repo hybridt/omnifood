@@ -1,3 +1,5 @@
+@use '../abstracts/colors';
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,53 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  color: #555;
+  font-family: 'Rubik', sans-serif;
+  color: colors.$color-text;
   font-size: 1.8rem;
+  font-weight: 400;
 }
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: colors.$color-heading;
+}
+
+h1 {
+  font-size: 5.2rem;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 4.4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+// a {
+//   text-decoration: none;
+
+//   &:link, &:visited {
+//     color: colors.$color-heading;
+//   }
+
+//   &:hover, &:active {
+//     color: colors.$color-hover;
+//   }
+// }
+
