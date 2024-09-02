@@ -1,4 +1,5 @@
 @use '../abstracts/colors';
+@use '../abstracts/variables';
 
 * {
   margin: 0;
@@ -25,14 +26,14 @@ ul {
   font-size: 1.6rem;
   font-weight: 500;
   color: colors.$color-hover;
-  letter-spacing: 0.75px;
+  letter-spacing: variables.$spacing-subheadings;
   text-transform: uppercase;
 }
 
 h1, h2, h3, h4 {
   font-weight: 700;
   color: colors.$color-heading;
-  letter-spacing: -0.5px;
+  letter-spacing: variables.$spacing-headings;
 }
 
 h2, h3 {

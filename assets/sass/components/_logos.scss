@@ -1,0 +1,10 @@
+.logos {
+  display: flex;
+  justify-content: space-around;
+
+  &__img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 0.5;
+  }
+}
