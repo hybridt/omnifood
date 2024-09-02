@@ -10,7 +10,7 @@
 
 
   &__link {
-    transition: all .3s;
+    @extend %transition;
 
     &:link, &:visited {
       color: colors.$color-heading;

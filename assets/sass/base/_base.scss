@@ -21,21 +21,19 @@ ul {
   list-style: none;
 }
 
-.container {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
 h1, h2, h3, h4 {
   font-weight: 700;
-  line-height: 1.1;
   color: colors.$color-heading;
+  letter-spacing: -0.5px;
+}
+
+h2, h3 {
+  line-height: 1.2;
 }
 
 h1 {
   font-size: 5.2rem;
-  letter-spacing: -0.5px;
+  line-height: 1.05;
 }
 
 h2 {
@@ -49,15 +47,3 @@ h3 {
 h4 {
   font-size: 2.4rem;
 }
-// a {
-//   text-decoration: none;
-
-//   &:link, &:visited {
-//     color: colors.$color-heading;
-//   }
-
-//   &:hover, &:active {
-//     color: colors.$color-hover;
-//   }
-// }
-

@@ -1,0 +1,7 @@
+@mixin flex-columns($cols, $gap) {
+  $width: calc((100% - $gap) / $cols);
+  display: flex;
+  > * {
+    flex-basis: $width;
+  }
+}
