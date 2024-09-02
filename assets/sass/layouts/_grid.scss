@@ -1,0 +1,9 @@
+@use '../abstracts/mixins';
+
+.grid {
+  display: grid;
+
+  &_2cols {
+    @include mixins.grid($cols: 2);
+  }
+}

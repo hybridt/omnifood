@@ -1,0 +1,68 @@
+@use '../abstracts/colors';
+
+.app {
+  padding: 9.6rem 0;
+
+  &__subheading {
+    margin-bottom: 1.6rem;
+  }
+
+  &__heading {
+    margin-bottom: 9.6rem;
+  }
+
+  &__steps {
+    row-gap: 9.6rem;
+    column-gap: 4.8rem;
+    align-items: center;
+  }
+
+  &__step-number {
+    font-size: 8.6rem;
+    color: #ddd;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+
+  &__step-heading {
+    margin-bottom: 3.2rem;
+  }
+
+  &__step-description {
+    line-height: 1.8;
+  }
+
+  &__step-img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    &::before {
+      width: 60%;
+      padding-bottom: 60%;
+      background-color: colors.$color-bg;
+      z-index: -2;
+    }
+
+    &::after {
+      width: 45%;
+      padding-bottom: 45%;
+      background-color: colors.$color-bg-darker;
+      z-index: -1;
+    }
+  }
+
+  &__step-img {
+    width: 35%;
+  }
+}
