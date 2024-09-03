@@ -3,14 +3,6 @@
 .app {
   padding: 9.6rem 0;
 
-  &__subheading {
-    margin-bottom: 1.6rem;
-  }
-
-  &__heading {
-    margin-bottom: 9.6rem;
-  }
-
   &__steps {
     row-gap: 9.6rem;
     column-gap: 6.4rem;
@@ -22,10 +14,6 @@
     color: #ddd;
     font-weight: 600;
     margin-bottom: 1.2rem;
-  }
-
-  &__step-heading {
-    margin-bottom: 3.2rem;
   }
 
   &__step-description {
