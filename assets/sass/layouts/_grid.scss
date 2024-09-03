@@ -2,8 +2,14 @@
 
 .grid {
   display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 
   &_2cols {
     @include mixins.grid($cols: 2);
+  }
+
+  &_3cols {
+    @include mixins.grid($cols: 3);
   }
 }

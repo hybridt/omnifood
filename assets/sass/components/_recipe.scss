@@ -1,0 +1,57 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+
+.recipe {
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: variables.$shadow-card;
+  transition: all .3s;
+
+  &:hover {
+    transform: translateY(-2rem);
+    box-shadow: variables.$shadow-card-hover;
+  }
+
+  &__body {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+  
+  &__img {
+    width: 100%;
+  }
+
+  &__tags {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 3.2rem;
+  }
+
+  &__details-item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: colors.$color-text;
+
+    &_rating {
+      color: colors.$color-primary;
+    }
+  }
+
+  &__reviews-count {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+}
