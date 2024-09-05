@@ -2,7 +2,7 @@
 @use '../abstracts/variables';
 
 .recipe {
-  border-radius: 11px;
+  border-radius: variables.$border-card;
   overflow: hidden;
   box-shadow: variables.$shadow-card;
   transition: all .3s;

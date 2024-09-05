@@ -1,0 +1,82 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  padding: 4.6rem;
+  width: 75%;
+  border-radius: variables.$border-card;
+  overflow: hidden;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: colors.$color-hover;
+    letter-spacing: variables.$spacing-subheadings;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+  }
+
+  &__price {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: colors.$color-heading;
+    margin-bottom: 0.5rem;
+  }
+
+  &__dollar {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  &__period-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: colors.$color-author;
+  }
+
+  &__list {
+    flex: 1;
+    margin-bottom: 4.8rem;
+  }
+
+  &__button {
+    text-align: center;
+  }
+
+  &_starter {
+    border: 2px solid colors.$color-bg;
+    justify-self: end;
+  }
+
+  &_complete {
+    background-color: colors.$color-bg;
+    position: relative;
+
+    &::after {
+      content: 'Best value';
+      background-color: colors.$color-tag-paleo;
+      color: colors.$color-heading;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 700;
+      padding: 0.8rem 8rem;
+
+      position: absolute;
+      top: 6%;
+      right: -18%;
+      transform: rotate(45deg);
+    }
+  }
+}

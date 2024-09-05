@@ -384,6 +384,22 @@ strong {
   background-color: #fcc419;
 }
 
+.list__item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.list__item:last-child {
+  margin: 0;
+}
+.list__icon {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
 .diets__list-item {
   display: flex;
   align-items: center;
@@ -400,6 +416,8 @@ strong {
 }
 
 .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
@@ -413,6 +431,74 @@ strong {
 }
 .gallery__img:hover {
   transform: scale(1.1);
+}
+
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  padding: 4.6rem;
+  width: 75%;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.pricing-plan__header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.pricing-plan__name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #cf711f;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.pricing-plan__price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.pricing-plan__dollar {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.pricing-plan__period-text {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.pricing-plan__description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #666;
+}
+.pricing-plan__list {
+  flex: 1;
+  margin-bottom: 4.8rem;
+}
+.pricing-plan__button {
+  text-align: center;
+}
+.pricing-plan_starter {
+  border: 2px solid #fdf2e9;
+  justify-self: end;
+}
+.pricing-plan_complete {
+  background-color: #fdf2e9;
+  position: relative;
+}
+.pricing-plan_complete::after {
+  content: "Best value";
+  background-color: #fcc419;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.8rem 8rem;
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=style.css.map */

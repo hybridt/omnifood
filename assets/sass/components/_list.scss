@@ -1,0 +1,22 @@
+@use '../abstracts/colors';
+
+.list {
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 1.6rem;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    color: colors.$color-primary;
+  }
+}
