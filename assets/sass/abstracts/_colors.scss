@@ -1,12 +1,17 @@
 $color-primary: #e67e22;
+$color-primary-light: #eb984e;
+$color-primary-shade: #45260a;
 $color-hover: #cf711f;
 $color-heading: #333;
 $color-text: #555;
 $color-author: #666;
 $color-heading-add: #888;
+$color-placeholder: #aaa;
 $color-light: #fff;
 $color-bg: #fdf2e9;
 $color-bg-darker: #fae5d3;
 $color-tag-veget: #51cf66;
 $color-tag-vegan: #94d82d;
 $color-tag-paleo: #fcc419;
+
+$gradient-bg: linear-gradient(to right bottom, $color-primary-light, $color-primary);

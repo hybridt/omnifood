@@ -5,6 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    box-shadow: variables.$shadow-focus;
+  }
 }
 
 html {
@@ -20,6 +25,13 @@ body {
 
 ul {
   list-style: none;
+}
+
+label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
 }
 
 .subheading {

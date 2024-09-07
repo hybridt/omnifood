@@ -1,0 +1,18 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+
+.input {
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  background-color: colors.$color-bg;
+  color: inherit;
+  border-radius: 9px;
+  border: none;
+  font-family: inherit;
+  box-shadow: variables.$shadow-input;
+  transition: all .3s;
+
+  &::placeholder {
+    color: colors.$color-placeholder;
+  }
+}

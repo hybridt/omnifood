@@ -1,0 +1,54 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+
+.sign-up {
+  color: colors.$color-primary-shade;
+  padding: 4.8rem 0 12.8rem;
+
+  &__box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: colors.$gradient-bg;
+    border-radius: variables.$border-card;
+    box-shadow: variables.$shadow-cta;
+    overflow: hidden;
+  }
+
+  &__body {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  }
+
+  &__heading {
+    color: inherit;
+    margin-bottom: 3.2rem;
+  }
+
+  &__description {
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+  }
+
+  &__form {
+    gap: 3rem;
+    align-items: end;
+  }
+
+  &__img {
+    background-image: linear-gradient(to right bottom, rgba(235, 152, 78, 0.35), rgb(230, 126, 34, 0.35)), url('assets/img/eating.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .input, .button {
+    width: 100%;
+
+    &:focus {
+      box-shadow: variables.$shadow-focus-light;
+    }
+  }
+
+  .button {
+    padding: 1.2rem;
+  }
+  
+}

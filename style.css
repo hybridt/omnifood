@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
+}
 
 html {
   font-size: 62.5%;
@@ -17,6 +21,13 @@ body {
 
 ul {
   list-style: none;
+}
+
+label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
 }
 
 .subheading {
@@ -81,12 +92,13 @@ strong {
   padding: 1.4rem 3.2rem;
   font-size: 2rem;
   border-radius: 9px;
+  border: none;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s;
+  font-family: inherit;
   cursor: pointer;
 }
-
 .button_main {
   background-color: #e67e22;
   color: #fff;
@@ -94,7 +106,6 @@ strong {
 .button_main:hover {
   background-color: #cf711f;
 }
-
 .button_additional {
   background-color: #fff;
   color: #555;
@@ -102,6 +113,32 @@ strong {
 .button_additional:hover {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+.button_form {
+  background-color: #45260a;
+  color: #fdf2e9;
+}
+.button_form:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
+}
+.button:active {
+  box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
+}
+
+.input {
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  background-color: #fdf2e9;
+  color: inherit;
+  border-radius: 9px;
+  border: none;
+  font-family: inherit;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.input::placeholder {
+  color: #aaa;
 }
 
 .logo {
@@ -306,6 +343,48 @@ strong {
   line-height: 1.6;
   text-align: center;
   margin: 4.8rem 0 9.6rem 0;
+}
+
+.sign-up {
+  color: #45260a;
+  padding: 4.8rem 0 12.8rem;
+}
+.sign-up__box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.sign-up__body {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.sign-up__heading {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+.sign-up__description {
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.sign-up__form {
+  gap: 3rem;
+  align-items: end;
+}
+.sign-up__img {
+  background-image: linear-gradient(to right bottom, rgba(235, 152, 78, 0.35), rgba(230, 126, 34, 0.35)), url("assets/img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.sign-up .input, .sign-up .button {
+  width: 100%;
+}
+.sign-up .input:focus, .sign-up .button:focus {
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+.sign-up .button {
+  padding: 1.2rem;
 }
 
 .customers {
