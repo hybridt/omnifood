@@ -12,4 +12,8 @@
   &_3cols {
     @include mixins.grid($cols: 3);
   }
+
+  &_4cols {
+    @include mixins.grid($cols: 4);
+  }
 }
