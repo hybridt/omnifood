@@ -1,9 +1,10 @@
 @use '../abstracts/colors';
-@use '../abstracts/variables';
+@use '../abstracts/variables' as var;
+@use '../abstracts/placeholders';
 
 .link {
+  @extend %transition;
   display: inline-block;
-  transition: all .3s;
 
   &:link, &:visited {
     color: colors.$color-primary;
@@ -19,7 +20,7 @@
 }
 
 .footer-link {
-  transition: all .3s;
+  @extend %transition;
 
   &:link, &:visited {
     color: colors.$color-link;

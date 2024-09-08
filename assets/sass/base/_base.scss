@@ -1,5 +1,5 @@
 @use '../abstracts/colors';
-@use '../abstracts/variables';
+@use '../abstracts/variables' as var;
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 
   &:focus {
     outline: none;
-    box-shadow: variables.$shadow-focus;
+    box-shadow: var.$shadow-focus;
   }
 }
 
@@ -38,7 +38,7 @@ label {
   font-size: 1.6rem;
   font-weight: 500;
   color: colors.$color-hover;
-  letter-spacing: variables.$spacing-subheadings;
+  letter-spacing: var.$spacing-subheadings;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
 }
@@ -46,7 +46,7 @@ label {
 h1, h2, h3, h4 {
   font-weight: 700;
   color: colors.$color-heading;
-  letter-spacing: variables.$spacing-headings;
+  letter-spacing: var.$spacing-headings;
 }
 
 h2, h3 {

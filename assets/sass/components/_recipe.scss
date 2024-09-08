@@ -1,15 +1,16 @@
 @use '../abstracts/colors';
-@use '../abstracts/variables';
+@use '../abstracts/variables' as var;
+@use '../abstracts/placeholders';
 
 .recipe {
-  border-radius: variables.$border-card;
+  @extend %transition;
+  border-radius: var.$border-card;
   overflow: hidden;
-  box-shadow: variables.$shadow-card;
-  transition: all .3s;
+  box-shadow: var.$shadow-card;
 
   &:hover {
     transform: translateY(-2rem);
-    box-shadow: variables.$shadow-card-hover;
+    box-shadow: var.$shadow-card-hover;
   }
 
   &__body {

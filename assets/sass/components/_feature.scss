@@ -1,15 +1,16 @@
 @use '../abstracts/colors';
+@use '../abstracts/placeholders';
 
 .feature {
 
   &__icon {
+    @extend %circle;
     width: 32px;
     height: 32px;
     padding: 1.6rem;
     margin-bottom: 3.2rem;
     background-color: colors.$color-bg;
     color: colors.$color-primary;
-    border-radius: 100%;
   }
 
   &__heading {

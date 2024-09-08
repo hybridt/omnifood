@@ -1,7 +1,9 @@
 @use '../abstracts/colors';
+@use '../abstracts/placeholders';
+@use '../abstracts/variables' as var;
 
 .footer {
-  padding: 12.8rem 0;
+  padding: var.$padding-xl 0;
   border-top: 1px solid colors.$color-separator;
 
   &__logo-col {
@@ -11,7 +13,7 @@
   }
 
   &__logo {
-    transition: all .3s;
+    @extend %transition;
     margin-bottom: 3.2rem;
   }
 

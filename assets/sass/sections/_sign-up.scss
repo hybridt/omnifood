@@ -1,5 +1,5 @@
 @use '../abstracts/colors';
-@use '../abstracts/variables';
+@use '../abstracts/variables' as var;
 
 .sign-up {
   color: colors.$color-primary-shade;
@@ -9,8 +9,8 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-image: colors.$gradient-bg;
-    border-radius: variables.$border-card;
-    box-shadow: variables.$shadow-cta;
+    border-radius: var.$border-card;
+    box-shadow: var.$shadow-cta;
     overflow: hidden;
   }
 
@@ -43,7 +43,7 @@
     width: 100%;
 
     &:focus {
-      box-shadow: variables.$shadow-focus-light;
+      box-shadow: var.$shadow-focus-light;
     }
   }
 

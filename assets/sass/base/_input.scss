@@ -1,16 +1,17 @@
 @use '../abstracts/colors';
-@use '../abstracts/variables';
+@use '../abstracts/placeholders';
+@use '../abstracts/variables' as var;
 
 .input {
+  @extend %transition;
   padding: 1.2rem;
   font-size: 1.8rem;
-  background-color: colors.$color-bg;
-  color: inherit;
-  border-radius: 9px;
   border: none;
   font-family: inherit;
-  box-shadow: variables.$shadow-input;
-  transition: all .3s;
+  color: inherit;
+  background-color: colors.$color-bg;
+  border-radius: var.$border-input;
+  box-shadow: var.$shadow-input;
 
   &::placeholder {
     color: colors.$color-placeholder;

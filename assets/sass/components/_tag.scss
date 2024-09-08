@@ -1,14 +1,14 @@
 @use '../abstracts/colors';
+@use '../abstracts/placeholders';
 
 .tag {
+  @extend %circle;
   display: inline-block;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
   margin: 0 0.4rem 1.2rem 0;
   padding: 0.4rem 0.8rem;
-  background-color: #51cf66;
-  border-radius: 100px;
 
   &_vegetarian {
     background-color: colors.$color-tag-veget;

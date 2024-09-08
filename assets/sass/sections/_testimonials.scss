@@ -1,4 +1,6 @@
 @use '../abstracts/colors';
+@use '../abstracts/variables' as var;
+@use '../abstracts/placeholders';
 
 .testimonials {
   background-color: colors.$color-bg;
@@ -10,7 +12,7 @@
   }
 
   &__body {
-    padding: 9.6rem;
+    padding: var.$padding-l;
   }
 
   &__customers {
@@ -19,9 +21,9 @@
   }
 
   &__img {
+    @extend %circle;
     width: 6.4rem;
     height: 6.4rem;
-    border-radius: 100%;
     margin-bottom: 1.2rem;
   }
 

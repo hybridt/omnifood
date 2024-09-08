@@ -1,7 +1,8 @@
 @use '../abstracts/colors';
+@use '../abstracts/variables' as var;
 
 .app {
-  padding: 9.6rem 0;
+  padding: var.$padding-l 0;
 
   &__steps {
     align-items: center;
