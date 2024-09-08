@@ -1,0 +1,22 @@
+@use '../abstracts/colors';
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+  &__link {
+    display: inline-block;
+    transition: all .3s;
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: colors.$color-link;
+
+    &:hover {
+      color: colors.$color-text;
+    }
+  }
+}

@@ -16,4 +16,8 @@
   &_4cols {
     @include mixins.grid($cols: 4);
   }
+
+  &_footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  }
 }

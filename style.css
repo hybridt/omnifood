@@ -39,21 +39,6 @@ label {
   margin-bottom: 1.6rem;
 }
 
-.link {
-  display: inline-block;
-  transition: all 0.3s;
-}
-.link:link, .link:visited {
-  color: #e67e22;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
-}
-.link:hover, .link:active {
-  color: #cf711f;
-  border-bottom: 1px solid transparent;
-}
-
 h1, h2, h3, h4 {
   font-weight: 700;
   color: #333;
@@ -145,6 +130,33 @@ strong {
   width: 16.3rem;
 }
 
+.link {
+  display: inline-block;
+  transition: all 0.3s;
+}
+.link:link, .link:visited {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+}
+.link:hover, .link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-link {
+  transition: all 0.3s;
+}
+.footer-link:link, .footer-link:visited {
+  color: #767676;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.footer-link:hover, .footer-link:active {
+  color: #555;
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -158,6 +170,9 @@ strong {
 }
 .grid_4cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid_footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .container {
@@ -194,6 +209,42 @@ strong {
 .nav__button {
   padding: 1rem 2.4rem;
   font-size: 1.8rem;
+}
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+.footer__logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__logo {
+  transition: all 0.3s;
+  margin-bottom: 3.2rem;
+}
+.footer__copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: auto;
+}
+.footer__heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.footer__address {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-style: normal;
+  margin-bottom: 3.2rem;
+}
+.footer__link {
+  margin-bottom: 1.4rem;
+}
+.footer__link:last-child {
+  margin: 0;
 }
 
 .hero {
@@ -607,6 +658,24 @@ strong {
 }
 .feature__description {
   line-height: 1.8;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.social-list__link {
+  display: inline-block;
+  transition: all 0.3s;
+}
+.social-list__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #767676;
+}
+.social-list__icon:hover {
+  color: #555;
 }
 
 /*# sourceMappingURL=style.css.map */
