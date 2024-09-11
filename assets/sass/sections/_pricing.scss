@@ -2,6 +2,16 @@
 .pricing {
   padding: var.$padding-l 0;
 
+  @media (max-width: 37em) {
+    padding: var.$padding-xmd 0;
+  }
+
+  &__plans {
+    @media (max-width: 37em) {
+      justify-items: center;
+    }
+  }
+
   &__tax-text {
     font-size: 1.6rem;
     line-height: 1.6;

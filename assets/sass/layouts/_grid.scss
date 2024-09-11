@@ -7,18 +7,42 @@
 
   &_2cols {
     @include mixins.grid($cols: 2);
+
+    @media (max-width: 37em) {
+      @include mixins.grid($cols: 1);
+    }
   }
 
   &_3cols {
     @include mixins.grid($cols: 3);
+
+    @media (max-width: 49em) {
+      @include mixins.grid($cols: 2);
+    }
+
+    @media (max-width: 37em) {
+      @include mixins.grid($cols: 1);
+    }
   }
 
   &_4cols {
     @include mixins.grid($cols: 4);
+
+    @media (max-width: 49em) {
+      @include mixins.grid($cols: 2);
+    }
+
+    @media (max-width: 37em) {
+      @include mixins.grid($cols: 1);
+    }
   }
 
   &_footer {
     grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+
+    @media (max-width: 49em) {
+      @include mixins.grid($cols: 6);
+    }
   }
 
   @media (max-width: 75em) {

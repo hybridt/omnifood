@@ -3,7 +3,11 @@
 
 .sign-up {
   color: colors.$color-primary-shade;
-  padding: 4.8rem 0 12.8rem;
+  padding: var.$padding-md 0 var.$padding-xl;
+
+  @media (max-width: 37em) {
+    padding: var.$padding-md 0 var.$padding-l;
+  }
 
   &__box {
     display: grid;
@@ -16,10 +20,18 @@
     @media (max-width: 61em) {
       grid-template-columns: 3fr 2fr;
     }
+
+    @media (max-width: 37em) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__body {
-    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    padding: var.$padding-md var.$padding-xmd var.$padding-xmd var.$padding-xmd;
+
+    @media (max-width: 37em) {
+      padding: var.$padding-s;
+    }
   }
 
   &__heading {
@@ -49,6 +61,11 @@
     background-image: linear-gradient(to right bottom, rgba(235, 152, 78, 0.35), rgb(230, 126, 34, 0.35)), url('assets/img/eating.jpg');
     background-size: cover;
     background-position: center;
+
+    @media (max-width: 37em) {
+      grid-row: 1;
+      height: 32rem;
+    }
   }
 
   .input, .button {

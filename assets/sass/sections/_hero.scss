@@ -6,6 +6,10 @@
   padding: var.$padding-md 0 var.$padding-l 0;
   background-color: colors.$color-bg;
 
+  @media (max-width: 37em) {
+    padding: var.$padding-s 0 var.$padding-xmd 0;
+  }
+
   &__wrapper {
     max-width: 130rem;
     align-items: center;
@@ -29,6 +33,10 @@
     @media (max-width: 61em) {
       padding: 0 8rem;
       text-align: center;
+    }
+
+    @media (max-width: 37em) {
+      padding: 0;
     }
   }
 
@@ -75,6 +83,10 @@
 
     @media (max-width: 61em) {
       width: 60%;
+    }
+
+    @media (max-width: 37em) {
+      width: 70%;
     }
   }
 

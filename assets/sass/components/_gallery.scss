@@ -27,4 +27,9 @@
   @media (max-width: 61em) {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  @media (max-width: 37em) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem
+  }
 }

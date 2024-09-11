@@ -21,6 +21,10 @@
     @media (max-width: 75em) {
       padding: var.$padding-l var.$padding-md;
     }
+
+    @media (max-width: 37em) {
+      padding: var.$padding-xmd var.$padding-md;
+    }
   }
 
   &__customers {

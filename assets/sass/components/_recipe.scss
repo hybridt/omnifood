@@ -59,4 +59,7 @@
     cursor: pointer;
   }
 
+  @media (max-width: 37em) {
+    max-width: 50rem;
+  }
 }

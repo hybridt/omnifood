@@ -4,6 +4,10 @@
 .app {
   padding: var.$padding-l 0;
 
+  @media (max-width: 37em) {
+    padding: var.$padding-xmd 0;
+  }
+
   &__steps {
     align-items: center;
   }
@@ -13,6 +17,10 @@
     color: #ddd;
     font-weight: 600;
     margin-bottom: 1.2rem;
+
+    @media (max-width: 61em) {
+      font-size: 7.4rem;
+    }
   }
 
   &__step-description {
@@ -47,9 +55,38 @@
       background-color: colors.$color-bg-darker;
       z-index: -1;
     }
+
+    @media (max-width: 49em) {
+
+      &::before {
+        width: 70%;
+        padding-bottom: 70%;
+      }
+
+      &::after {
+        width: 55%;
+        padding-bottom: 55%;
+      }
+    }
+
+    @media (max-width: 37em) {
+      transform: translateY(3.2rem);
+
+      &:nth-child(2) {
+        grid-row: 1;
+      }
+
+      &:nth-child(6) {
+        grid-row: 5;
+      }
+    }
   }
 
   &__step-img {
     width: 35%;
+
+    @media (max-width: 49em) {
+      width: 45%;
+    }
   }
 }

@@ -58,6 +58,10 @@
   &_starter {
     border: 2px solid colors.$color-bg;
     justify-self: end;
+
+    @media (max-width: 37em) {
+      justify-self: auto;
+    }
   }
 
   &_complete {
@@ -78,5 +82,13 @@
       right: -18%;
       transform: rotate(45deg);
     }
+  }
+
+  @media (max-width: 49em) {
+    width: 100%;
+  }
+
+  @media (max-width: 37em) {
+    max-width: 50rem;
   }
 }

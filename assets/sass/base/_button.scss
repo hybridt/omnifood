@@ -47,4 +47,8 @@
   &:active {
     box-shadow: var.$shadow-focus;
   }
+
+  @media (max-width: 37em) {
+    padding: 2.4rem 1.6rem;
+  }
 }
