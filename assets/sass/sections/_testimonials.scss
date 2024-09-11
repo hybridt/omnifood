@@ -9,10 +9,18 @@
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
     gap: 0;
+
+    @media (max-width: 61em) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__body {
     padding: var.$padding-l;
+
+    @media (max-width: 75em) {
+      padding: var.$padding-l var.$padding-md;
+    }
   }
 
   &__customers {

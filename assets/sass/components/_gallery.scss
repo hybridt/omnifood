@@ -19,4 +19,12 @@
       transform: scale(1.1);
     }
   }
+
+  @media (max-width: 75em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 61em) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }

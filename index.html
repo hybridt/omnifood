@@ -10,7 +10,7 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header nav-opened">
     <a href="#">
       <img src="assets/img/logo.png" alt="omnifood logo" class="logo">
     </a>
@@ -23,6 +23,9 @@
         <li><a href="#" class="button button_main nav__button">Try for free</a></li>
       </ul>
     </nav>
+    <button class="burger">
+      <span class="burger__line"></span>
+    </button>
   </header>
   <main class="main">
     <section class="hero">
@@ -273,7 +276,7 @@
               <li class="list__item"><ion-icon name="checkmark-outline" class="list__icon"></ion-icon>1 meal per day</li>
               <li class="list__item"><ion-icon name="checkmark-outline" class="list__icon"></ion-icon>Order from 11am to 9pm</li>
               <li class="list__item"><ion-icon name="checkmark-outline" class="list__icon"></ion-icon>Delivery is free</li>
-              <li class="list__item"><ion-icon name="checkmark-outline" class="list__icon"></ion-icon>Get access to latest recipes</li>
+              <li class="list__item list__item_exception"><ion-icon name="close-outline" class="list__icon"></ion-icon><span class="list__text">Get access to latest recipes</span></li>
             </ul>
             <div class="pricing-plan__button">
               <a class="button button_main">Start eating well</a>
@@ -352,7 +355,7 @@
                 </select>
               </div>
 
-              <div>
+              <div class="sign-up__btn">
                 <button class="button button_form">Sign up now</button>
               </div>
             </form>

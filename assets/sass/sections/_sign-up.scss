@@ -12,6 +12,10 @@
     border-radius: var.$border-card;
     box-shadow: var.$shadow-cta;
     overflow: hidden;
+
+    @media (max-width: 61em) {
+      grid-template-columns: 3fr 2fr;
+    }
   }
 
   &__body {
@@ -31,6 +35,14 @@
   &__form {
     gap: 3rem;
     align-items: end;
+
+    @media (max-width: 61em) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__btn {
+    margin-top: 1.2rem;
   }
 
   &__img {

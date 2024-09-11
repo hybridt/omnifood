@@ -1,0 +1,65 @@
+@use '../abstracts/colors';
+@use '../abstracts/placeholders';
+
+.burger {
+  @extend %transition;
+  position: relative;
+  display: none;
+  width: 3.5rem;
+  height: 2.2rem;
+  border: none;
+  background: none;
+  
+  &__line,
+  &::after,
+  &::before {
+    @extend %transition;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: colors.$color-heading;
+  }
+
+  &__line {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    content: '';
+    top: 0;
+
+  }
+
+  &::after {
+    content: '';
+    bottom: 0;
+  }
+
+  @media (max-width: 61em) {
+    display: inline-block;
+  }
+}
+
+.nav-opened {
+
+  .burger {
+
+    &__line {
+      opacity: 0;
+    }
+
+    &::before {
+      top: 50%;
+      transform: translateY(-50%);
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 50%;
+      transform: translateY(-50%);
+      transform: rotate(-45deg);
+    }
+  }
+}
