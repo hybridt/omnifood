@@ -59,7 +59,7 @@
     border: 2px solid colors.$color-bg;
     justify-self: end;
 
-    @media (max-width: 37em) {
+    @media (max-width: var.$breakpoint-mobile) {
       justify-self: auto;
     }
   }
@@ -84,11 +84,11 @@
     }
   }
 
-  @media (max-width: 49em) {
+  @media (max-width: var.$breakpoint-tablet-s) {
     width: 100%;
   }
 
-  @media (max-width: 37em) {
+  @media (max-width: var.$breakpoint-mobile) {
     max-width: 50rem;
   }
 }

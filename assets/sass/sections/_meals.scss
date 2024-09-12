@@ -3,7 +3,7 @@
 .meals {
   padding: var.$padding-l 0;
 
-  @media (max-width: 37em) {
+  @media (max-width: var.$breakpoint-mobile) {
     padding: var.$padding-xmd 0;
   }
 
@@ -14,20 +14,20 @@
   &__menu {
     margin-bottom: 4.8rem;
 
-    @media (max-width: 37em) {
+    @media (max-width: var.$breakpoint-mobile) {
       justify-items: center;
     }
   }
 
   &__diets {
-    @media (max-width: 49em) {
+    @media (max-width: var.$breakpoint-tablet-s) {
       grid-column: 1 / -1;
       justify-self: center;
     }
   }
 
   &__list {
-    @media (max-width: 49em) {
+    @media (max-width: var.$breakpoint-tablet-s) {
       padding-left: 4rem;
     }
   }

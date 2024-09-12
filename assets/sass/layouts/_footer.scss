@@ -6,7 +6,7 @@
   padding: var.$padding-xl 0;
   border-top: 1px solid colors.$color-separator;
 
-  @media (max-width: 37em) {
+  @media (max-width: var.$breakpoint-mobile) {
     padding: var.$padding-l 0;
   }
 
@@ -22,7 +22,7 @@
   }
 
   &__nav-col {
-    @media (max-width: 49em) {
+    @media (max-width: var.$breakpoint-tablet-s) {
       order: -1;
       grid-column: span 2;
       margin-bottom: 3.2rem;
@@ -31,7 +31,7 @@
 
   &__logo-col,
   &__contacts-col {
-    @media (max-width: 49em) {
+    @media (max-width: var.$breakpoint-tablet-s) {
       grid-column: span 3;
     }
   }

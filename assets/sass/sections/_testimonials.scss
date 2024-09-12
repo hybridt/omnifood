@@ -10,7 +10,7 @@
     align-items: center;
     gap: 0;
 
-    @media (max-width: 61em) {
+    @media (max-width: var.$breakpoint-tablet-l) {
       grid-template-columns: 1fr;
     }
   }
@@ -18,11 +18,11 @@
   &__body {
     padding: var.$padding-l;
 
-    @media (max-width: 75em) {
+    @media (max-width: var.$breakpoint-laptop) {
       padding: var.$padding-l var.$padding-md;
     }
 
-    @media (max-width: 37em) {
+    @media (max-width: var.$breakpoint-mobile) {
       padding: var.$padding-xmd var.$padding-md;
     }
   }

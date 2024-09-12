@@ -48,7 +48,7 @@
     box-shadow: var.$shadow-focus;
   }
 
-  @media (max-width: 37em) {
+  @media (max-width: var.$breakpoint-mobile) {
     padding: 2.4rem 1.6rem;
   }
 }

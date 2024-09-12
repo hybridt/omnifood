@@ -2,12 +2,12 @@
 .pricing {
   padding: var.$padding-l 0;
 
-  @media (max-width: 37em) {
+  @media (max-width: var.$breakpoint-mobile) {
     padding: var.$padding-xmd 0;
   }
 
   &__plans {
-    @media (max-width: 37em) {
+    @media (max-width: var.$breakpoint-mobile) {
       justify-items: center;
     }
   }
