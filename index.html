@@ -16,11 +16,11 @@
     </a>
     <nav class="nav">
       <ul class="nav__list">
-        <li><a href="#" class="nav__link">How it works</a></li>
-        <li><a href="#" class="nav__link">Meals</a></li>
-        <li><a href="#" class="nav__link">Testimonials</a></li>
-        <li><a href="#" class="nav__link">Pricing</a></li>
-        <li><a href="#" class="button button_main nav__button">Try for free</a></li>
+        <li><a href="#how" class="nav__link">How it works</a></li>
+        <li><a href="#meals" class="nav__link">Meals</a></li>
+        <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#sign-up" class="button button_main nav__button">Try for free</a></li>
       </ul>
     </nav>
     <button class="burger">
@@ -34,8 +34,8 @@
           <h1 class="hero__heading">A healthy meal delivered to your door, every single day</h1>
           <p class="hero__description">The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
           <div class="hero__buttons">
-            <a href="#" class="button button_main">Start eating well</a>
-            <a href="#" class="button button_additional">Learn more &darr;</a>
+            <a href="#sign-up" class="button button_main">Start eating well</a>
+            <a href="#how" class="button button_additional">Learn more &darr;</a>
           </div>
           <div class="hero__customers">
             <ul class="customers">
@@ -69,7 +69,7 @@
         </div>
       </div>
     </section>
-    <section class="app">
+    <section class="app" id="how">
       <div class="container">
         <p class="subheading app__subheading">How it works</p>
         <h2 class="app__heading">Your daily dose of health in 3 simple steps</h2>
@@ -106,7 +106,7 @@
         </div>
       </div>
     </section>
-    <section class="meals">
+    <section class="meals" id="meals">
       <div class="container">
         <div class="meals__header">
           <p class="subheading">Meals</p>
@@ -180,7 +180,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="testimonials__container grid grid_2cols">
         <div class="testimonials__body">
           <p class="subheading">Testimonials</p>
@@ -259,7 +259,7 @@
         </div>
       </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="container">
         <p class="subheading">Pricing</p>
         <h2 class="pricing__heading">Eating well without breaking the bank</h2>
@@ -279,7 +279,7 @@
               <li class="list__item list__item_exception"><ion-icon name="close-outline" class="list__icon"></ion-icon><span class="list__text">Get access to latest recipes</span></li>
             </ul>
             <div class="pricing-plan__button">
-              <a class="button button_main">Start eating well</a>
+              <a href="#sign-up" class="button button_main">Start eating well</a>
             </div>
           </div>
           <div class="pricing-plan pricing-plan_complete">
@@ -297,7 +297,7 @@
               <li class="list__item"><ion-icon name="checkmark-outline" class="list__icon"></ion-icon>Get access to latest recipes</li>
             </ul>
             <div class="pricing-plan__button">
-              <a class="button button_main">Start eating well</a>
+              <a href="#sign-up" class="button button_main">Start eating well</a>
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@
         </div>
       </div>
     </section>
-    <section class="sign-up">
+    <section class="sign-up" id="sign-up">
       <div class="container">
         <div class="sign-up__box">
           <div class="sign-up__body">
@@ -422,5 +422,6 @@
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
