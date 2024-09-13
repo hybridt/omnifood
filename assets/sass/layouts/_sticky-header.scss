@@ -1,19 +1,21 @@
 @use '../abstracts/colors';
+@use '../abstracts/variables' as var;
 
 .sticky-header {
   .header {
     position: fixed;
     left: 0;
     right: 0;
-    height: 9.6rem;
+    height: 8rem;
     background-color: colors.$color-menu;
     backdrop-filter: blur(2px);
     z-index: 10;
     opacity: 1;
     transition: opacity .3s;
+    box-shadow: var.$shadow-header;
   }
 
   .hero {
-    margin-top: 9.6rem;
+    margin-top: 8rem;
   }
 }

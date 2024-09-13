@@ -5,6 +5,8 @@
 .nav {
   @extend %transition;
   transition-timing-function: ease-in-out;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   
   &__list {
     display: flex;

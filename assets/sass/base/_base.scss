@@ -16,6 +16,7 @@ html {
   font-size: 62.5%; // 10px
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
 
   @media (max-width: var.$breakpoint-laptop) {
     font-size: 56.25%; // 9px
