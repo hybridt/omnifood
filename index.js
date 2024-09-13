@@ -3,6 +3,11 @@ const header = document.querySelector('.header');
 const navList = document.querySelector('.nav__list');
 const html = document.documentElement;
 
+
+////////////////////////////////////////
+/* Navigation Menu */
+////////////////////////////////////////
+
 function toggleMenu(element) {
   if (screen.width <= 976) {
     element.classList.toggle('nav-opened');
@@ -33,3 +38,45 @@ navList.addEventListener('click', (e) => {
     toggleMenu(header);
   }
 });
+
+
+////////////////////////////////////////
+/* Sticky Header */
+////////////////////////////////////////
+
+const targetSection = document.querySelector('.hero');
+
+const sectionObsOptions = {
+  root: null,
+  threshold: 0,
+  rootMargin: '-40px',
+}
+
+const headerObsOptions = {
+  root: null,
+  threshold: 0,
+  rootMargin: '40px',
+}
+
+const obsSection = new IntersectionObserver((entries) => {
+  const ent = entries[0];
+  if (ent.isIntersecting) {
+    document.body.classList.remove('sticky-header');
+  } else {
+    document.body.classList.add('sticky-header');
+  }
+  console.log(entries);
+}, sectionObsOptions);
+
+const obsHeader = new IntersectionObserver((entries) => {
+  const ent = entries[0];
+  if (ent.isIntersecting) {
+    header.style.removeProperty('opacity');
+  } else {
+    header.style.opacity = '0';
+  }
+  console.log(entries);
+}, headerObsOptions);
+
+obsSection.observe(targetSection);
+obsHeader.observe(header);
